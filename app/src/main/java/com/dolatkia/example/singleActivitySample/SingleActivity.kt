@@ -54,7 +54,7 @@ class SingleActivity : ThemeActivity() {
         binder.nextActivityBtn.setOnClickListener {
             val myIntent = Intent(this, SingleActivity::class.java)
             myIntent.putExtra("number", number + 1)
-            this.startActivity(myIntent)
+            startActivity(myIntent)
         }
     }
 
